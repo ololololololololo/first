@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькуляфтер</title>
+		<meta charset="UTF-8" />
+	    <link rel="stylesheet" href="lib/calc.css">
+	    <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+</head>
+
+<body>
+	<div id="container"><br><br><br>
+<form name="calc" id="calculator">
+	
+	<table align="center" valign="middle">
+		
+	<tr>
+	<td align="center" valign="middle">
+		 <input type="text" name="input"  id="dsp" size="30" disabled class="display">
+	</td>
+	</tr>
+	<tr class="buttons" align="center" valign="middle" >
+	<td>
+		<input type="button"  id="cb" class="btn btn-default" name="one" value="1" OnClick="calc.input.value += '1'">
+		<input type="button"  id="cb" class="btn btn-default" name="two" value="2" OnClick="calc.input.value += '2'">
+		<input type="button"  id="cb" class="btn btn-default" name="three" value="3" OnClick="calc.input.value += '3'">
+		<input type="button" id="cb" class="btn btn-default" name="add" value="+" OnClick="calc.input.value += '+'">
+		<br>
+		<input type="button"  id="cb" class="btn btn-default" name="four" value="4" OnClick="calc.input.value += '4'">
+		<input type="button"  id="cb" class="btn btn-default" name="five" value="5" OnClick="calc.input.value += '5'">
+		<input type="button"  id="cb" class="btn btn-default" name="six" value="6" OnClick="calc.input.value += '6'">
+		<input type="button"  id="cb" class="btn btn-default" name="sub" value="-" OnClick="calc.input.value += '-'">
+		<br>
+		<input type="button"  id="cb" class="btn btn-default" name="seven" value="7" OnClick="calc.input.value += '7'">
+		<input type="button"  id="cb" class="btn btn-default" name="eight" value="8" OnClick="calc.input.value += '8'">
+		<input type="button"  id="cb" class="btn btn-default" name="nine" value="9" OnClick="calc.input.value += '9'">
+		<input type="button" id="cb"  class="btn btn-default" name="mul" value="x" OnClick="calc.input.value += '*'">
+		<br>
+		<input type="button" id="cb"  class="btn-custom" name="clear" value="c" OnClick="calc.input.value = ''">
+		<input type="button"  id="cb" class="btn btn-default" name="zero" value="0" OnClick="calc.input.value += '0'">
+		<input type="button" id="cb" class="btn btn-default" name="doit" value="=" OnClick="calc.input.value = eval(calc.input.value)">
+		<input type="button" id="cb" class="btn btn-default" name="div"  value="/" OnClick="calc.input.value += '/'">
+	</td>
+	</tr>
+	
+	</table>
+	
+</form>	</div>
+<script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"> </script>
+</body>	
+</html>

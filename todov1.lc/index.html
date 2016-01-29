@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Список заданий</title>
+		<meta charset="UTF-8" />
+		
+        <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+        <link rel="stylesheet" href="assets/todo.css" />        	
+    </head>
+
+    <body class="well">
+    	<style type="text/css">
+    	body
+    	{background-image:url('lib/texture.png');}
+    	</style>
+        <div id="container">
+
+            <div id="header"> Что необходимо сделать! </div>
+
+            <div class="task-list task-container" id="pending">
+                <h3 style="color: Red";>Отложено</h3>                
+            </div>
+
+            <div class="task-list task-container" id="inProgress">
+                <h3 style="color: Yellow";>В процессе</h3>
+            </div>
+
+            <div class="task-list task-container" id="completed">
+                <h3 style="color: Green";>Завершено</h3>
+            </div>
+
+            <div class="task-list">
+                <h3>Добавить задание</h3>
+                <form id="todo-form">
+                    <input type="text" placeholder="Заголовок" />
+                    <textarea placeholder="Описание"></textarea>
+                    <input type="text" id="datepicker" placeholder="Выполнить до (чч/мм/гггг)" />
+                    <input type="button" class="btn btn-primary" value="Новое задание" onclick="todo.add();" />
+                </form>
+
+                <input type="button" class="btn btn-primary" value="Стереть все" onclick="todo.clear();" />
+
+                <div id="delete-div">
+                    Перетянуть сюда, чтобы удалить
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+	          <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+            <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+            <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+            <script type="text/javascript" src="assets/todo.js"></script>    
+				
+            <script type="text/javascript">
+            
+                $( "#datepicker" ).datepicker(); 
+				                        
+                $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+                $(".task-container").droppable();
+                $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+                todo.init();
+               </script>
+
+        </div> 
+    </body>
+</html>

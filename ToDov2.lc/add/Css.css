@@ -1,0 +1,108 @@
+#container{
+    margin: 0 auto;
+   
+
+    min-height: 100%;
+    background-color: transparent;
+    border: 1;
+    border-color: black;
+}
+
+#header{
+    font-size: 40px;
+     
+    text-align: center;
+    margin-bottom: 15px;
+    color: black;
+    background-color: transparent;
+}
+
+#new-todo
+		{
+			size: fixed;
+			height: 32px;
+			line-height: 15px;
+			font-family: Tahoma, Verdana, Arial;
+			
+			
+			
+		}
+
+		
+		a.btn-primary input[type="button"]
+		{
+			 width: 240px;
+    		margin: 0px;
+			color: black;
+			margin-bottom: 0px;
+			
+		}
+		
+		a.btn-primary :hover
+		{
+    width: 240px;
+    		margin: 0px;
+			color: black;
+			margin-bottom: 0px;
+			
+		}
+		#main
+		{
+			margin: 12px;
+			text-align:left;
+		}
+		
+		
+		
+		a
+		{
+			text-decoration: none !important;
+		}
+		
+		a.del
+		{
+			display: inline-block;
+			width: 42px;
+			text-align: center;
+			margin-left: -120px;
+			color: #ccc;
+		}
+		
+		a.del:hover
+		{
+			display: inline-block;
+			color: White;
+			background-color: Red;
+		}
+		
+		li.task
+		{
+			cursor: default;
+			margin-left: 80px;
+		}
+		
+		li.task span
+		{
+			margin-left: 64px;
+		}
+		
+		#list-ready li.task
+		{
+			list-style-type: none;
+			opacity: 0.5;
+			color: Gray;
+		}
+		
+		#list-ready li.task span
+		{
+			text-decoration: line-through;
+		}#delete-div{
+    display: none;
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 10px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+		

@@ -1,0 +1,14 @@
+	#container {width: 900px; margin: 0 auto;}
+	
+	#calculator * {font-size: 16px;}
+	#calculator table {border: solid 3px silver; border-spacing: 3px; background-color: #EEE; }
+	#calculator table td {border-spacing: 3px;}
+	input.display {width: 215px;text-align: right;}
+	td.buttons {border-top: solid 1px silver;}	
+	input[type= button] {width: 40px; height: 30px;}
+	#cb{width: 50px; height: 50px;  margin:3px !important;}
+	.btn-custom { border-radius: 5px; width: 50px; height: 50px; background-color: hsl(0, 69%, 22%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b42121", endColorstr="#5e1111"); background-image: -khtml-gradient(linear, left top, left bottom, from(#b42121), to(#5e1111)); background-image: -moz-linear-gradient(top, #b42121, #5e1111); background-image: -ms-linear-gradient(top, #b42121, #5e1111); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b42121), color-stop(100%, #5e1111)); background-image: -webkit-linear-gradient(top, #b42121, #5e1111); background-image: -o-linear-gradient(top, #b42121, #5e1111); background-image: linear-gradient(#b42121, #5e1111); border-color: #5e1111 #5e1111 hsl(0, 69%, 17%); color: #fff !important; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33); -webkit-font-smoothing: antialiased; }
+	#dsp {margin-bottom: 2px; margin-top: 2px; line-height: 25px; height:40px; background-color:White;    font-size:25px;}
+
+
+
